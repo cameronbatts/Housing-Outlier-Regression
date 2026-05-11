@@ -1,20 +1,128 @@
-# Housing Market Outlier Detection & Regression Analysis
+# Housing Price Regression Diagnostics & Outlier Analysis
 
-**Tools:** R · tidyverse · ggplot2 · ggfortify · gridExtra · Linear Regression
+**Tools:** R · ggplot2 · Linear Regression · Residual Analysis · Regression Diagnostics · dplyr · tidyr
 
 ---
 
-## Problem
+## Business Problem
 
-Housing sale price data contained missing values, anomalous records, and outliers that could distort predictive model accuracy before and after the 2009 market shift.
+Housing price models can be heavily impacted by outliers, neighborhood variation, and data quality issues. This project analyzes residential housing sale prices to evaluate regression model performance, identify influential observations, and investigate how unusual values affect predictive accuracy.
 
-## Approach
+The objective was to improve understanding of model assumptions, residual behavior, and neighborhood-level pricing distributions through regression diagnostics and exploratory analysis.
 
-Built linear regression models in R on Ames housing data split by pre and post-2009 periods, conducting NA analysis across 82 variables and applying diagnostic plots for outlier detection. Used density plots to identify fraudulent price clustering in specific neighborhoods, then applied a regression-based correction with random noise to simulate realistic market values.
+---
 
-## Impact
+## Project Approach
 
-Achieved an adjusted R-squared of 0.88, identifying neighborhood, exterior quality, and floor square footage as significant price drivers. Successfully detected and masked fraudulent price patterns in the NAmes and Gilbert neighborhoods, confirming the correction through residual diagnostics.
+- Analyzed residential housing sale price data across multiple neighborhoods
+- Explored neighborhood-level price distributions using density plots
+- Built linear regression models for housing sale price prediction
+- Evaluated:
+  - residual behavior
+  - leverage points
+  - normality assumptions
+  - heteroscedasticity
+  - influential observations
+- Compared model behavior before and after outlier or anomaly adjustments
+- Visualized fitted values and diagnostic metrics to assess model quality
+
+---
+
+## Analytical Focus Areas
+
+- Linear regression diagnostics
+- Residual analysis
+- Outlier detection
+- Leverage analysis
+- Housing market segmentation
+- Neighborhood-level price distributions
+- Model assumption testing
+- Exploratory data analysis (EDA)
+
+---
+
+## Project Visuals
+
+### Neighborhood Sale Price Density Analysis
+
+Distribution of housing sale prices across neighborhoods after 2009.
+
+![Density Plot](./Images/Density-Plot.png)
+
+---
+
+### Regression Diagnostic Analysis
+
+Diagnostic plots evaluating residuals, leverage, variance patterns, and model assumptions.
+
+![Diagnostic Plot](./Images/Diagnostic-Plot.png)
+
+---
+
+### Residuals vs Fitted Values
+
+Residual pattern analysis used to assess model fit quality and heteroscedasticity.
+
+![Fitted Values](./Images/Fitted.png)
+
+---
+
+### Fraud & Outlier Investigation
+
+Exploration of unusual housing price behavior and neighborhood-level anomalies.
+
+![Fraud Analysis](./Images/Fraud.png)
+
+---
+
+### Geometric Density Comparisons
+
+Neighborhood distribution comparisons before and after anomaly adjustments.
+
+![Geom Plot](./Images/Geom.png)
+
+---
+
+### Leverage & Influence Analysis
+
+Identification of high-leverage observations and influential regression points.
+
+![Leverage Plot](./Images/Leverage.png)
+
+---
+
+### Additional Neighborhood Density Analysis
+
+Comparison of housing density distributions before and after adjustments.
+
+![More Plots](./Images/More-Plots.png)
+
+---
+
+### Neighborhood Distribution Analysis
+
+Focused analysis of NAmes and Gilbert housing sale price distributions.
+
+![Neighborhood Analysis](./Images/NAmes.png)
+
+---
+
+### Residual Diagnostic Evaluation
+
+Residual diagnostics used to evaluate model assumption validity and fit behavior.
+
+![Residual Analysis](./Images/Residuals.png)
+
+---
+
+## Repository Structure
+
+```text
+data/        -> raw or processed housing datasets
+Images/      -> regression and diagnostic visualizations
+notebooks/   -> analytical notebooks and R workflows
+reports/     -> exported reports and project outputs
+```
 
 ---
 
@@ -22,9 +130,14 @@ Achieved an adjusted R-squared of 0.88, identifying neighborhood, exterior quali
 
 | File | Description |
 |------|-------------|
-| `housing_outlier_regression.Rmd` | R Markdown source file with full analysis |
-| `housing_outlier_regression.html` | Rendered HTML output |
+| `notebooks/` | Regression analysis and diagnostic workflows |
+| `reports/` | Exported project reports and outputs |
+| `Images/` | Regression diagnostic and density visualizations |
 
 ---
 
-*Part of my data & analytics portfolio — [cameronbatts.github.io](https://cameronbatts.github.io)*
+## Portfolio
+
+Portfolio Website: https://cameronbatts.github.io/
+
+GitHub Profile: https://github.com/cameronbatts
