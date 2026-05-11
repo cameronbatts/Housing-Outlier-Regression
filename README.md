@@ -135,8 +135,11 @@ reports/     -> exported reports and project outputs
 | `Images/` | Regression diagnostic and density visualizations |
 
 ---
-## Portfolio
+# Author
 
-Portfolio Website: https://cameron-batts.github.io/
+Cameron Batts
 
-GitHub Profile: https://github.com/cameron-batts
+GitHub: https://github.com/Cameron-Batts
+
+Portfolio: https://cameron-batts.github.io
+
